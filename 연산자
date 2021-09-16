@@ -1,0 +1,83 @@
+연산자 종류:
+산술 연산자
+할당 연산자: =, +=, -=, /=, %=, //=
+비교 연산자
+논리 연산자: and, or, not
+
+result = data1 + data2
+             피연산자
+
+문자열을 이용한 덧셈은 가능, 뺄셈은 불가능.
+str1 = ‘Good’
+str2 = ‘  ’
+str3 = ‘afternoon’
+
+result = str1 + str2 +str3
+print(‘result : {}’.format(result))
+
+
+나눗셈 연산자
+num1 = 10
+num2 = 3
+
+result = num1 / num2
+print('result : {}'.format(result))
+print('result : %.2f' % result)
+
+0을 나눗셈 하는 경우
+결과는 항상 0
+
+0으로 나누는 경우
+0으로 어느 것도 나눌 수 없다. error-> ZeroDivisionError
+
+나눗셈 결과는 항상 float형이다.
+
+나머지와 몫을 동시에 구하기
+divmod()
+result = divmod(num1,num2)
+print(‘result : {}’.format(result))
+print(‘’)
+
+
+#n의 m제곱근 공식
+# n ** (1/m)
+result = 2 ** (1/2)
+print('result : {}'.format(result))
+print('result : %.2f' % result)
+
+제곱근 함수 sqrt()
+import math
+math.sqrt(3) => 8
+
+거듭제곱 함수 pow()
+math.pow(2,4) => 16
+
+모듈이란operator
+
+누군가 이미 만들어 놓은 훌륭한 기능(공짜로 사용가능)
+- 수학 연산 관련 모듈, 난수 관련 모듈, 연산자 관련 모듈 등등
+
+산술 연산 관련 함수
+print('{} + {} : {}'.format(num1,num2,operator.add(num1,num2)))
+print('{} - {} : {}'.format(num1,num2,operator.sub(num1,num2)))
+print('{} * {} : {}'.format(num1,num2,operator.mul(num1,num2)))
+print('{} / {} : {}'.format(num1,num2,operator.truediv(num1,num2)))
+print('{} % {} : {}'.format(num1,num2,operator.mod(num1,num2)))
+print('{} // {} : {}'.format(num1,num2,operator.floordiv(num1,num2)))
+print('{} ** {} : {}'.format(num1,num2,operator.pow(num1,num2)))
+
+비교 연산자 관련 함수
+print('{} == {} : {}'.format(num1,num2,operator.eq(num1,num2)))
+print('{} != {} : {}'.format(num1,num2,operator.ne(num1,num2)))
+print('{} / {} : {}'.format(num1,num2,operator.gt(num1,num2)))
+print('{} % {} : {}'.format(num1,num2,operator.ge(num1,num2)))
+print('{} < {} : {}'.format(num1,num2,operator.lt(num1,num2)))
+print('{} <= {} : {}'.format(num1,num2,operator.le(num1,num2)))
+
+#논리 연산자 관련 함수
+flag1 = True
+flag2 = False
+
+print('{} and {} : {}'.format(flag1,flag2,operator.and_(flag1,flag2)))
+print('{} or {} : {}'.format(flag1,flag2,operator.or_(flag1,flag2)))
+print('{} not {} : {}'.format(flag1,flag2,operator.not_(flag1)))
